@@ -5,9 +5,6 @@ import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
 
 export const Navbar = () => {
-  const navigation = [
-  ];
-
   return (
     <div className="w-full">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-1">
@@ -68,7 +65,7 @@ export const Navbar = () => {
                 </Disclosure.Button>
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
-                  <>
+                  {/* <>
                     {navigation.map((item, index) => (
                       <Link key={index} href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
                           {item}
@@ -77,14 +74,14 @@ export const Navbar = () => {
                     <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
                         Get Started
                     </Link>
-                  </>
+                  </> */}
                 </Disclosure.Panel>
             </>
           )}
         </Disclosure>
         
         {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center lg:ml-auto">
+        {/* <div className="hidden text-center lg:flex lg:items-center lg:ml-auto">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
@@ -94,7 +91,7 @@ export const Navbar = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
       </nav>
     </div>
