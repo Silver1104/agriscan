@@ -48,7 +48,7 @@ export default function DetectPage() {
   const handleDetect = async () => {
     setLoading(true);
 
-    const res = await fetch(process.env.NEXT_PUBLIC_API_ENDPOINT + "/predict-data-url" as string, {
+    const res = await fetch(process.env.NEXT_PUBLIC_ENDPOINT + "/api/predict" as string, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
